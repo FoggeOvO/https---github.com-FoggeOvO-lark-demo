@@ -27,7 +27,7 @@ export const getTenantAccessToken = async () => {
 
   // 获取 Access Token 的函数
 export const getUserAuthCode = async () => {
-    const redirect_uri = 'https%3A%2F%2F127.0.0.1%2Fsalary'
+    const redirect_uri = 'http%3A%2F%2F127.0.0.1:3000%2Fsalary/'
     const scope = 'contact:user.employee_id:readonly'
     try {
       const response = await axios({

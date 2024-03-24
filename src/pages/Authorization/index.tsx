@@ -1,5 +1,5 @@
 import {FC, useEffect} from 'react'
-import {getTenantAccessToken, getUserAuthCode ,getUserAccessToken, getCurrentUserInfo } from '../../util/auth'
+import { getUserAuthCode  } from '../../util/auth'
 
 const Authorization: FC = () => {
     useEffect( () => {
