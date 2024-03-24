@@ -3,7 +3,6 @@ import { getUserAuthCode  } from '../../util/auth'
 
 const Authorization: FC = () => {
     useEffect( () => {
-        console.log('@@')
         getUserAuthCode()
         .then(data => {
           console.log('Current user info:', data);
