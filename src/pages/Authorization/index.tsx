@@ -1,19 +1,14 @@
-import {FC, useEffect} from 'react'
-import { getUserAuthCode  } from '../../util/auth'
+import { FC, useEffect, useState } from 'react'
+import { getUserAuthCode } from '../../util/auth'
 
 const Authorization: FC = () => {
-    useEffect( () => {
-        getUserAuthCode()
-        .then(data => {
-          console.log('Current user info:', data);
-        })
-        .catch(error => {
-          console.error('Failed to get current user info:', error);
-        });
-    },[])
+
+  useEffect(() => {
+    getUserAuthCode();
+  }, [])
   return (
     <div>
-        Authorization!
+      Authorization new02!
     </div>
   )
 }

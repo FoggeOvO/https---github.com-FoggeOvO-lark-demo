@@ -6,6 +6,6 @@ module.exports = function (app) {
             target: 'https://open.larksuite.com',
             changeOrigin: true,
             pathRewrite: { '^/api': '' }
-        })
+        }),
     )
 }
